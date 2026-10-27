@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>      
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Viora Haven | Luxury Hotel</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<i class="fa-solid fa-hotel"></i>
+
+<span>Viora Haven</span>
+
+</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#rooms">Rooms</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-overlay">
+
+<div class="hero-content">
+
+<h1>Experience Luxury Like Never Before</h1>
+
+<p>
+Stay at Ahmedabad's Premium Luxury Hotel with world-class hospitality and unforgettable comfort.
+</p>
+
+<a href="#rooms" class="hero-btn">
+Explore Rooms
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ROOM SECTION ================= -->
+
+<section class="room-section" id="rooms">
+
+<div class="room-container">
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+<h2>Find Your Room</h2>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Room...">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</div>
+
+<label>Room Type</label>
+
+<select id="roomFilter">
+
+<option value="all">All Rooms</option>
+
+<option value="Single Room (Non AC)">
+Single Room (Non AC)
+</option>
+
+<option value="Single Room (AC)">
+Single Room (AC)
+</option>
+
+<option value="Double Room (Non AC)">
+Double Room (Non AC)
+</option>
+
+<option value="Double Room (AC)">
+Double Room (AC)
+</option>
+
+<option value="Luxury Single Room">
+Luxury Single Room
+</option>
+
+<option value="Luxury Double Room">
+Luxury Double Room
+</option>
+
+</select>
+
+<label>Stay Days</label>
+
+<input
+type="number"
+id="stayDays"
+placeholder="Enter Days"
+min="1"
+value="1">
+
+<button id="searchBtn">
+Search Rooms
+</button>
+
+</div>
+
+<!-- ================= ROOM GALLERY ================= -->
+
+<div class="room-gallery">
+
+    <!-- ================= ROOM 1 ================= -->
+
+<div class="room-card"
+data-room="Single Room (Non AC)"
+data-price="1499"
+data-image="images/room1.jpg"
+data-description="Comfortable room with Free WiFi, TV, Queen Size Bed and 24×7 Room Service.">
+
+<img src="images/room1.jpg" alt="Single Room Non AC">
+
+<div class="room-name">
+<h3>Single Room (Non AC)</h3>
+</div>
+
+<div class="room-overlay">
+<h2>Single Room (Non AC)</h2>
+
+<p>
+Comfortable room with Free WiFi, TV and essential amenities.
+</p>
+
+<h3>₹1,499 / Night</h3>
+
+<button class="book-btn">
+Book Now
+</button>
+
+</div>
+
+</div>
+
+<!-- ================= ROOM 2 ================= -->
+
+<div class="room-card"
+data-room="Single Room (AC)"
+data-price="2199"
+data-image="images/room2.jpg"
+data-description="Modern air-conditioned room with Smart TV, Breakfast and High-Speed WiFi.">
+
+<img src="images/room2.jpg" alt="Single Room AC">
+
+<div class="room-name">
+<h3>Single Room (AC)</h3>
+</div>
+
+<div class="room-overlay">
+<h2>Single Room (AC)</h2>
+
+<p>
+Air-conditioned room with Smart TV, breakfast and premium comfort.
+</p>
+
+<h3>₹2,199 / Night</h3>
+
+<button class="book-btn">
+Book Now
+</button>
+
+</div>
+
+</div>
+
+<!-- ================= ROOM 3 ================= -->
+
+<div class="room-card"
+data-room="Double Room (Non AC)"
+data-price="2599"
+data-image="images/room3.jpg"
+data-description="Spacious room perfect for couples with TV, WiFi and comfortable interiors.">
+
+<img src="images/room3.jpg" alt="Double Room Non AC">
+
+<div class="room-name">
+<h3>Double Room (Non AC)</h3>
+</div>
+
+<div class="room-overlay">
+<h2>Double Room (Non AC)</h2>
+
+<p>
+Spacious room perfect for couples and small families.
+</p>
+
+<h3>₹2,599 / Night</h3>
+
+<button class="book-btn">
+Book Now
+</button>
+
+</div>
+
+</div>
+
+<!-- ================= ROOM 4 ================= -->
+
+<div class="room-card"
+data-room="Double Room (AC)"
+data-price="3299"
+data-image="images/room4.jpg"
+data-description="Luxury AC room with King Size Bed, Smart TV, Mini Refrigerator and Breakfast.">
+
+<img src="images/room4.jpg" alt="Double Room AC">
+
+<div class="room-name">
+<h3>Double Room (AC)</h3>
+</div>
+
+<div class="room-overlay">
+<h2>Double Room (AC)</h2>
+
+<p>
+Premium AC room with king-size bed and luxury interiors.
+</p>
+
+<h3>₹3,299 / Night</h3>
+
+<button class="book-btn">
+Book Now
+</button>
+
+</div>
+
+</div>
+
+<!-- ================= ROOM 5 ================= -->
+
+<div class="room-card"
+data-room="Luxury Single Room"
+data-price="4199"
+data-image="images/room5.jpg"
+data-description="Elegant luxury room with premium furniture, sofa lounge and complimentary breakfast.">
+
+<img src="images/room5.jpg" alt="Luxury Single Room">
+
+<div class="room-name">
+<h3>Luxury Single Room</h3>
+</div>
+
+<div class="room-overlay">
+<h2>Luxury Single Room</h2>
+
+<p>
+Elegant room with premium furnishings and complimentary breakfast.
+</p>
+
+<h3>₹4,199 / Night</h3>
+
+<button class="book-btn">
+Book Now
+</button>
+
+</div>
+
+</div>
+
+<!-- ================= ROOM 6 ================= -->
+
+<div class="room-card"
+data-room="Luxury Double Room"
+data-price="5999"
+data-image="images/room6.jpg"
+data-description="Luxury suite with King Size Bed, Mini Bar, Smart TV, Breakfast and City View.">
+
+<img src="images/room6.jpg" alt="Luxury Double Room">
+
+<div class="room-name">
+<h3>Luxury Double Room</h3>
+</div>
+
+<div class="room-overlay">
+<h2>Luxury Double Room</h2>
+
+<p>
+Our finest suite with premium luxury experience and modern facilities.
+</p>
+
+<h3>₹5,999 / Night</h3>
+
+<button class="book-btn">
+Book Now
+</button>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services" id="services">
+
+<div class="section-title">
+
+<h2>Premium Hotel Services</h2>
+
+<p>
+Enjoy our luxurious facilities designed to make your stay comfortable and memorable.
+</p>
+
+</div>
+
+<div class="service-container">
+
+<!-- Restaurant -->
+
+<div class="service-card"
+data-service="Restaurant"
+data-price="499">
+
+<img src="images/restaurant.jpg" alt="Restaurant">
+
+<div class="service-content">
+
+<h3>🍽 Multi-Cuisine Restaurant</h3>
+
+<p>
+Indian, Chinese, Italian and Continental cuisines prepared by experienced chefs.
+</p>
+
+<ul>
+<li>Breakfast Buffet — ₹499</li>
+<li>Lunch Buffet — ₹799</li>
+<li>Dinner Buffet — ₹999</li>
+</ul>
+
+<button class="service-btn">
+View Details
+</button>
+
+</div>
+
+</div>
+
+<!-- Swimming Pool -->
+
+<div class="service-card"
+data-service="Swimming Pool"
+data-price="350">
+
+<img src="images/pool.jpg" alt="Swimming Pool">
+
+<div class="service-content">
+
+<h3>🏊 Swimming Pool</h3>
+
+<p>
+Indoor & Outdoor Swimming Pool with Kids Zone.
+</p>
+
+<ul>
+<li>Adult Entry — ₹350</li>
+<li>Children — ₹200</li>
+<li>Pool Kit — ₹150</li>
+</ul>
+
+<button class="service-btn">
+View Details
+</button>
+
+</div>
+
+</div>
+
+<!-- Spa -->
+
+<div class="service-card"
+data-service="Spa"
+data-price="1500">
+
+<img src="images/spa.jpg" alt="Spa">
+
+<div class="service-content">
+
+<h3>💆 Luxury Spa</h3>
+
+<p>
+Relax with premium massage therapies and wellness treatments.
+</p>
+
+<ul>
+<li>Basic Massage — ₹1500</li>
+<li>Premium Therapy — ₹2500</li>
+<li>Steam Bath — ₹700</li>
+</ul>
+
+<button class="service-btn">
+View Details
+</button>
+
+</div>
+
+</div>
+
+<!-- Gym -->
+
+<div class="service-card"
+data-service="Gym"
+data-price="300">
+
+<img src="images/gym.jpg" alt="Gym">
+
+<div class="service-content">
+
+<h3>💪 Fitness Center</h3>
+
+<p>
+Modern gym with certified trainers.
+</p>
+
+<ul>
+<li>Gym Access — ₹300</li>
+<li>Trainer — ₹800</li>
+<li>Yoga — ₹600</li>
+</ul>
+
+<button class="service-btn">
+View Details
+</button>
+
+</div>
+
+</div>
+
+<!-- Parking -->
+
+<div class="service-card"
+data-service="Parking"
+data-price="200">
+
+<img src="images/parking.jpg" alt="Parking">
+
+<div class="service-content">
+
+<h3>🚗 Secure Parking</h3>
+
+<p>
+Covered parking with 24×7 CCTV and valet service.
+</p>
+
+<ul>
+<li>Car Parking — ₹200</li>
+<li>Valet — ₹400</li>
+<li>Bike Parking — ₹100</li>
+</ul>
+
+<button class="service-btn">
+View Details
+</button>
+
+</div>
+
+</div>
+
+<!-- Airport Pickup -->
+
+<div class="service-card"
+data-service="Airport Pickup"
+data-price="800">
+
+<img src="images/airport.jpg" alt="Airport Pickup">
+
+<div class="service-content">
+
+<h3>🚕 Airport Pickup</h3>
+
+<p>
+Comfortable airport pickup & drop service.
+</p>
+
+<ul>
+<li>Sedan — ₹800</li>
+<li>SUV — ₹1500</li>
+<li>Luxury Car — ₹2500</li>
+</ul>
+
+<button class="service-btn">
+View Details
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+<div class="about-image">
+<img src="images/about.jpg" alt="About Hotel">
+</div>
+
+<div class="about-content">
+
+<h2>About Viora Haven</h2>
+
+<p>
+
+Viora Haven is one of Ahmedabad's premium luxury hotels offering elegant accommodation, fine dining, wellness facilities and exceptional hospitality.
+
+</p>
+
+<ul>
+
+<li><i class="fa-solid fa-check"></i> 24×7 Room Service</li>
+
+<li><i class="fa-solid fa-check"></i> Free High-Speed WiFi</li>
+
+<li><i class="fa-solid fa-check"></i> Premium Hospitality</li>
+
+<li><i class="fa-solid fa-check"></i> Family Friendly Environment</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- ================= REVIEWS ================= -->
+
+<section class="reviews" id="reviews">
+
+<div class="section-title">
+
+<h2>Guest Reviews</h2>
+
+<p>See what our guests say about their experience.</p>
+
+</div>
+
+<div class="review-container">
+
+<div class="review-card">
+
+<h3>Rahul Shah</h3>
+
+<div class="stars">★★★★★</div>
+
+<p>
+
+Excellent rooms, delicious food and professional staff.
+
+</p>
+
+</div>
+
+<div class="review-card">
+
+<h3>Priya Patel</h3>
+
+<div class="stars">★★★★★</div>
+
+<p>
+
+Beautiful ambience with outstanding hospitality.
+
+</p>
+
+</div>
+
+<div class="review-card">
+
+<h3>Mohit Verma</h3>
+
+<div class="stars">★★★★★</div>
+
+<p>
+
+Clean rooms, luxury interiors and amazing facilities.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= BOOKING MODAL ================= -->
+
+<div class="booking-modal" id="bookingModal">
+
+<div class="booking-box">
+
+<span class="close-btn" id="closeModal">&times;</span>
+
+<h2>Room Booking</h2>
+
+<form id="bookingForm">
+
+<input
+type="text"
+id="customerName"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+id="customerEmail"
+placeholder="Email Address"
+required>
+
+<input
+type="tel"
+id="customerPhone"
+placeholder="Mobile Number"
+required>
+
+<label>Check In</label>
+<input
+type="date"
+id="checkIn"
+required>
+
+<label>Check Out</label>
+<input
+type="date"
+id="checkOut"
+required>
+
+<label>Stay Days</label>
+<input
+type="number"
+id="bookingDays"
+value="1"
+min="1"
+required>
+
+<label>Guests</label>
+<input
+type="number"
+id="guestCount"
+value="1"
+min="1"
+required>
+
+<div class="bill">
+
+<h3>Booking Summary</h3>
+
+<p>
+<span>Selected Room</span>
+<span id="selectedRoom">
+-
+</span>
+</p>
+
+<p>
+<span>Room Charge</span>
+<span id="roomCharge">
+₹0
+</span>
+</p>
+
+<p>
+<span>GST (18%)</span>
+<span id="gstAmount">
+₹0
+</span>
+</p>
+
+<p>
+<span>Service Charge</span>
+<span>
+₹500
+</span>
+</p>
+
+<hr>
+
+<h2>
+
+Grand Total
+
+<span id="grandTotal">
+
+₹0
+
+</span>
+
+</h2>
+
+</div>
+
+<button type="submit">
+
+Confirm Booking
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+<h2>Viora Haven</h2>
+
+<p>
+Luxury Hotel | Ahmedabad, Gujarat
+</p>
+
+<p>
+Email :
+info@viorahaven.com
+</p>
+
+<p>
+Phone :
++91 98765 43210
+</p>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+<a href="#"><i class="fab fa-twitter"></i></a>
+
+</div>
+
+<p class="copyright">
+
+© 2026 Viora Haven. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
